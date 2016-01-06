@@ -1,0 +1,51 @@
+{% block header %}
+	<div class="g-header">
+		<div class="topinfo-wrap">
+			<div class="topinfo container">
+				<span><a href="user/user.html">湖北画报旗下数字图片交易平台</a></span>
+				<div class="user">
+					<a href="login.html" class="login">登陆</a>
+					<a href="rigister.html" class="rigister">注册</a>
+					<a href="cart/myOrder.html" class="orderlist">我的订单</a>
+					<a href="cart/myCart.html" class="cart">购物车</a>
+				</div>
+			</div>
+		</div>
+		<div class="header-wrap">
+			<div class="header container clearfix">
+				<a href="http://202.114.71.171/~2013g2/"><img src="{{baseurl}}/theme/{{theme}}/images/logo/logo.png" alt="湖北画报旗下数字图片交易平台" class="logo"></a>	
+				<div class="search">
+					<form id="search_img" action="javascript:;">
+						<input type="text" value="" placeholder="请输入关键字">	
+						<input type="submit" value="搜 索">
+					</form>
+					<div class="recommlist">
+						<ul>
+							<li>
+								<a href="javascript:;">黄鹤楼</a>
+							</li>
+							<li>|</li>
+							<li>
+								<a href="javascript:;"> <em>长江夜景</em>
+								</a>
+							</li>
+							<li>|</li>
+							<li>
+								<a href="javascript:;">神农架</a>
+							</li>
+							<li>|</li>
+							<li>
+								<a href="javascript:;">十堰</a>
+							</li>
+							<li>|</li>
+							<li>
+								<a href="javascript:;"> <em>三峡风光</em>
+								</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+{% endblock %}

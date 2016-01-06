@@ -1,0 +1,191 @@
+/*  myorder css  */
+
+/*  title  */
+.sectionTitle {
+	margin: 40px;
+	font-size: 24px;
+	letter-spacing: 2px;
+	color: #e77a19;
+}
+/*  position  */
+.toRight {
+	float: right;
+}
+.toLeft {
+	float: left;
+}
+/*  orderlist coloumn width  */
+.g-order .td-1 {
+	width: 200px;
+}
+.g-order .td-2 {
+	width: 229px;
+}
+.g-order .td-3 {
+	width: 198px;
+}
+.g-order .td-4 {
+	width: 99px;
+}
+.g-order .td-5 {
+	width: 117px;
+}
+.g-order .td-6 {
+	width: 210px;
+}
+
+.g-order {
+	margin-bottom: 40px;
+}
+.g-order em {
+	font-style: normal;
+	color: #e77a19;
+}
+
+.g-order .order-list-2 {
+	display: none;
+}
+
+.g-order .order-info {
+	padding-bottom: 10px;
+	border-bottom: 1px solid #ddd;
+	margin-bottom: 16px;
+}
+/*  nav  */
+.g-order .order-tab {
+	float: left;
+}
+.g-order .order-tab a {
+	/*position: relative;
+	top:1px;*/
+	margin-right: 20px;
+	padding-bottom: 10px;
+	font-size: 18px;
+	color: #ccc;
+	cursor: pointer;
+}
+.g-order .order-tab .selected {
+	color: #e7a719;
+	border-bottom: 1px solid #e77a19;
+}
+/*  order search  */
+.g-order .order-search {
+	float: right
+}
+.g-order .order-search .input-text {
+	margin-right: 10px;
+	width: 60px;
+	height: 14px;
+	font-size: 12px;
+}
+.g-order .order-search .z-button {
+	background-color: #22ac38;
+}
+.g-order .order-search .z-button:hover {
+	background-color: #1FA435;
+}
+.g-order .order-search .z-button:active {
+	background-color: #1C9832;
+}
+.g-order .order-id {
+	padding: 10px 20px;
+	border-bottom: 1px solid #e6e6e6;
+	border-right: 1px solid #e6e6e6;
+	background-color: #f1f1f1;
+}
+
+/*  orderlsit  */
+.g-order .order-list {
+	border-top: 1px solid #e6e6e6;
+	border-left: 1px solid #e6e6e6;
+	background-color: #fff;
+}
+.g-order .order-title {
+	font-size: 14px;
+	letter-spacing: 1px;
+	color: #8a8987;
+}
+/*  li + td  */
+.g-order .order-item li,
+.g-order .order-title li {
+	float: left;
+	overflow: hidden;
+	border-bottom: 1px solid #e6e6e6;
+	border-right: 1px solid #e6e6e6;
+}
+.g-order .order-title li {
+	padding: 20px 0;
+	text-align: center;
+}
+/*  order-item  */
+.g-order .order-item li {
+	min-height: 178px;
+	font-size: 12px;
+}
+/*  picture in column  */
+.g-order .order-item .item-pic {
+	padding: 20px 20px 0;
+	text-align: center;
+}
+.g-order .order-item .itempic {
+	width: 100%;/* 250px */
+	height: 100px;
+	margin-bottom: 20px;
+}
+.g-order .order-item span {
+}
+/*  info in column  */
+.g-order .item-info {
+	padding: 15px;
+	line-height: 1.8em;
+}
+.g-order .item-info dd {
+	padding: 5px;
+}
+.g-order .item-info dd span {
+	color: #999;
+}
+.g-order .item-info .z-button {
+	display: inline-block;
+	padding: 0;
+	margin: 10px 10px 0;
+	width: 180px;
+	height: 40px;
+	background-color: #22ac38;
+	line-height: 40px;
+	text-align: center;
+}
+.g-order .item-info .z-button:hover {
+	background-color: #1FA435;
+}
+.g-order .item-info .z-button:active {
+	background-color: #1C9832;
+}
+/*  row-1 居中对齐  */
+.g-order .order-item .row-1 {
+	text-align: center;
+}
+.g-order .order-item .row-1 span {
+	font-size: 14px;
+	line-height: 178px;
+}
+/*  download  */
+.g-order .item-download {
+	padding-top: 60px;
+	text-align: center;
+}
+.g-order .item-download .button {
+	display: inline-block;
+	padding: 0;
+	margin-bottom: 20px;
+	width: 100px;
+	height: 36px;
+	line-height: 36px;
+}
+
+/*  pager  */
+.m-page-wrap {
+	padding: 20px 0;
+	border-right: 1px solid #e6e6e6;
+	border-bottom: 1px solid #e6e6e6;
+}

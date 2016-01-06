@@ -1,0 +1,96 @@
+/*service css*/
+
+.g-service .service-wrap {
+	padding: 44px 0 88px;
+}
+.g-service .service {
+	overflow: hidden;
+}
+.g-service .service .title {
+	padding: 20px 0;
+}
+.g-service .service h1 {
+	display: inline;
+	padding-left:15px;
+	margin-right: 20px;
+	border-left: 4px solid #e77a19;
+	font-size: 24px;
+	color: #333;
+}
+.g-service .service span,
+.g-service .service a  {
+	font-size: 16px;
+	color: #666;
+}
+.g-service .service .more {
+	float: right;
+}
+.g-service .service .more i {
+	position: relative;
+	top: 4px;
+	display: inline-block;
+	margin-left: 10px;
+	width: 22px;
+	height: 22px;
+	background-image: url(/~2013g2/theme/default/images/icons/sprite.png);
+	background-position: -25px 0;
+}
+
+/*service list item*/
+.g-service .service-list {
+	width: 1070px;
+}
+.g-service .service-item {
+	position: relative;
+	float: left;
+	width: 204px;
+	height: 259px;
+	margin-right: 10px;
+	margin-bottom: 10px;
+	background-color: #fff;
+	overflow: hidden;
+}
+.g-service .service-item img {
+	position: absolute;
+}
+.g-service .service-item .subtitle {
+	position: absolute;
+	z-index: 1;
+	bottom: 0;
+	width: 100%;
+}
+.g-service .service-item .subtitle .cover {
+	position: absolute;
+	left: 0;
+	bottom: 0;
+	z-index: 10;
+	width: 100%;
+}
+.g-service .service-item .subtitle h2 {
+	font-weight: normal;
+	text-align: center;
+}
+.g-service .service-item .subtitle h2 a{
+	font-size: 16px;
+	line-height: 46px;
+	color: #fff;
+}
+.g-service .service-item .subtitle .mask {
+	height: 46px;
+	background-color: #111;
+	opacity: .55;
+	filter: alpha(opacity=.55);
+}
+/*bullet*/
+.g-service .service-box-1 {
+	width: 418px;
+}
+/*shoot*/
+.g-service .service-bix-2 img {
+	text-align: center;
+	left: -10px;
+}
+/*flight*/
+.g-service .service-box-6 {
+	width: 632px;
+}

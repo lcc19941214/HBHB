@@ -1,0 +1,24 @@
+/*css layout*/
+html {
+	height: 100%;
+}
+body {
+	position: relative;
+	width: 100%;
+	min-width: 1100px;
+	min-height: 100%;
+}
+
+.container {
+	width: 1060px;
+	margin-left: auto;
+	margin-right:auto;
+}
+.clearfix:after{
+	content:".";
+	display: block;
+	clear: both;
+	overflow: hidden;
+	visibility: hidden;
+	height: 0;
+}

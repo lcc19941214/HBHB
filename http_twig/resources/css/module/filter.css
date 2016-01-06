@@ -1,0 +1,60 @@
+/*filter css*/
+
+.g-filter .m-filter-wrap {
+	border-top: 1px solid #ddd;
+	border-bottom: 1px solid #ddd;
+	background-color: #fff;
+	padding-top: 19px;
+	padding-bottom: 19px;
+}
+.g-filter .m-filter-box {
+
+}
+.g-filter .u-filter-list {
+	position: relative;
+	padding-left: 80px;
+	padding-right: 100px;
+	border-bottom: 1px solid #ddd;
+	height: 49px;
+	overflow: hidden;
+}
+.g-filter .last-filter-list {
+	border-bottom: none;
+}
+.g-filter .u-filter-list dl {
+	font-size: 16px;
+}
+.g-filter .u-filter-list dt,
+.g-filter .u-filter-list dd {
+	float: left;
+	display: inline-block;
+	padding: 16px 0;
+	color:#666;
+}
+.g-filter .u-filter-list dt {
+	margin-left: -80px;
+}
+.g-filter .u-filter-list dd {
+	margin-left: 35px;
+	width: 93px;
+	color: #333;
+}
+.g-filter .u-filter-list .more {
+	position: absolute;
+	top: 16px;
+	right: 0;
+	font-size: 16px;
+	color:#666;
+	cursor: pointer;
+}
+.g-filter .u-filter-list .more:hover {
+	color: #e77a19;
+}
+.g-filter .u-filter-list .more i {
+	position: relative;
+	top: 4px;
+	display: inline-block;
+	width: 14px;
+	height: 14px;
+	background-image: url(/~2013g2/theme/default/images/icons/sprite.png);
+}

@@ -1,0 +1,203 @@
+/*picResult css*/
+
+.m-sortbar .main-wrap, 
+.g-result .main-wrap {
+	margin: 20px 0 ;
+}
+
+.m-sortbar .main-wrap {
+	border-top: 1px solid #ddd;
+	border-bottom: 1px solid #ddd;
+	background-color: #fff;
+}
+.m-sortbar .sortbar {
+	padding: 16px 0;
+}
+.m-sortbar .tag-group {
+	padding-bottom: 16px;
+	border-bottom: 1px solid #ddd;
+}
+.m-sortbar .tag-group ul {
+	min-height: 28px;
+	font-size: 0;
+}
+.m-sortbar .tag-group li,
+.m-sortbar .tag-group span,
+.m-sortbar .tag-group i {
+	display: inline-block;
+	*zoom: 1;
+	*display: inline;
+}
+.m-sortbar .tag-group span {
+	padding-left: 10px;
+	padding-right: 30px;
+	height: 26px;
+	background-color: #ccc;
+	border-radius: 50px;
+	font-size: 14px;
+	line-height: 26px;
+	color: #fff;
+}
+.m-sortbar .tag-group span.placeholder {
+	padding: 0 10px;
+}
+.m-sortbar .tag-group i {/*closeTag*/
+	position: relative;
+	top: 5px;
+	right: 22px;
+	width: 20px;
+	height: 20px;
+	background-image: url("../../images/css_sprite/sprite.png");
+	background-position: 0 -125px;
+}
+
+.m-sortbar .sort-group,
+.m-sortbar .pager  {
+	padding-top: 16px;
+	font-size: 12px;
+	color: #666;
+}
+.m-sortbar .sort-group {
+	float: left;
+}
+.m-sortbar .sort-group a {
+	margin-right: 20px;
+	color: #666;
+}
+.m-sortbar .sort-group a.current {
+	color: #e77a19;
+}
+.m-sortbar .pager {
+	float: right;
+}
+.m-sortbar .pager span {
+	/*margin-left: 20px;*/
+}
+.m-sortbar .pager a {
+	margin: 0 10px;
+}
+.m-sortbar .pager em {
+	color: #e77a19;
+}
+.m-sortbar .pager i {
+	display: inline-block;
+	*zoom: 1;
+	*display: inline;
+	width: 5px;
+	height: 12px;
+	background-image: url("../../images/css_sprite/pictures.png");
+}
+.m-sortbar .pager .prev {
+	background-position:0 -107px;
+}
+.m-sortbar .pager .prev-disable {
+	background-position:0 -89px;
+}
+.m-sortbar .pager .prev:hover {
+	background-position:0 -124px;
+}
+.m-sortbar .pager .next {
+	background-position:-23px -107px;
+}
+.m-sortbar .pager .next-disable {
+	background-position:-23px -89px;
+}
+.m-sortbar .pager .next:hover {
+	background-position:-23px -124px;
+}
+/*pictures list*/
+.g-result .main-wrap {
+	padding: 16px 0;
+}
+.g-result .result-list {
+	margin-left: -10px;
+	width: 1080px;
+	overflow: hidden;
+}
+.g-result .result-item {
+	float: left;
+	margin: 0 10px 20px;
+	width: 250px;
+	border-radius: 4px;
+	background-color: #fff;
+	overflow: hidden;
+	transition: .4s;
+	-webkit-transition: .4s;
+}
+.g-result .result-item:hover {
+	box-shadow: 0 1px 10px 0 #aaa;
+}
+.g-result .result-item img {
+	/*max-width: 100%;*/
+	height: 180px;
+}
+.g-result .result-item .row-1 {
+	text-align: center;
+}
+.g-result .result-item .row-2 {
+	padding: 10px;
+	text-align: left;
+}
+.g-result .result-item .row-3 ul {
+	border-top: 1px solid #ddd;
+	font-size: 0;
+}
+.g-result .result-item .row-3 li {
+	position: relative;
+	float: left;
+	/*border box*/
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	-o-box-sizing: border-box;
+	-ms-box-sizing: border-box;
+	box-sizing: border-box;
+	width: 25%;
+	height: 30px;
+}
+.g-result .result-item .row-3 li~li {
+	border-left: 1px solid #ddd;
+}
+.g-result .result-item .row-3 a {
+	position: relative;
+	padding-left: 30px;
+	font-size: 12px;
+	line-height: 30px;
+	color: #666;
+}
+.g-result .result-item .row-3 i {
+	position: absolute;
+	top: -3px;
+	left: 2px;
+	width: 22px;
+	height: 24px;
+	margin-right: 6px;
+	background-image: url("../../images/css_sprite/pictures.png")
+}
+.g-result .preview{
+	background-position: 0 0;
+}
+.g-result .row-3 li:hover .preview {
+	background-position: 0 -26px;
+}
+.g-result .download {
+	background-position: -33px 0;
+}
+.g-result .row-3 li:hover .download {
+	background-position: -33px -26px;
+}
+.g-result .buy{
+	background-position: -65px 0;
+}
+.g-result .row-3 li:hover .buy {
+	background-position: -65px -26px;
+}
+.g-result .favor {
+	background-position: -97px -1px;
+}
+.g-result .row-3 li:hover .favor {
+	background-position: -97px -27px;
+}
+.g-result .favor.selected,
+.g-result .row-3 li:hover .selected {
+	background-position: -128px -1px;
+}

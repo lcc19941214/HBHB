@@ -1,0 +1,47 @@
+/*response css*/
+
+@media screen and (max-width: 1200px) and (min-width: 993px) {
+	body {
+		min-width: 1000px;
+	}
+	.container {
+		width: 960px;
+	}
+	.g-service .service-list {
+		width: 970px;
+	}
+	.g-service .service-item {
+		width: 232.5px;
+	}
+	/*bullet*/
+	.g-service .service-box-1 {
+		width: 232.5px;
+	}
+	/*flight*/
+	.g-service .service-box-6 {
+		width: 475px;
+	}
+	/*footer dl margin*/
+	.g-footer .footer-info .links dl {
+		margin-right: 100px;
+	}
+}
+@media screen and (max-width: 992px) and (min-width: 768px) {
+	body {
+		min-width: 800px;
+	}
+	.container {
+		width: 760px;
+	}
+	.g-service .service-list {
+		width: 770px;
+	}
+	.g-service .service-item {
+		width: 246.6px;
+	}
+	/*bullet*/
+	.g-service .service-box-1,
+	.g-service .service-box-6 {
+		width: 503.3px;
+	}
+}

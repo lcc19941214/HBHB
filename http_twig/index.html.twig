@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+	<title>数字图片湖北</title>
+	<meta charset="utf-8">
+	<meta name="description" content="">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" >
+	<link rel="shortcut icon" href="{{baseurl}}/theme/{{theme}}/images/icons/favicon.ico" type="image/x-icon"/>
+	<link rel="stylesheet" href="{{baseurl}}/theme/{{theme}}/css/reset.css">
+	<link rel="stylesheet" href="{{baseurl}}/theme/{{theme}}/css/base_block.css">
+	<link rel="stylesheet" href="{{baseurl}}/theme/{{theme}}/css/module.min.css">
+	<link rel="stylesheet" href="{{baseurl}}/theme/{{theme}}/css/pages.min.css">
+	<link rel="stylesheet" href="{{baseurl}}/theme/{{theme}}/css/response.css">
+	<script src="http://cdn.bootcss.com/jquery/1.8.3/jquery.js"></script>
+</head>
+<body>
+    {% include 'SkatingCmsBundle:Front/blocks:header.html.twig' %}
+
+    {% include 'SkatingCmsBundle:Front/blocks:filter.html.twig' %}
+
+	{% block maincontent %}
+	<div class="g-service">
+		<div class="service-wrap">
+			<div class="service container">
+				<div class="title">
+					<h1>
+						服务
+					</h1>
+					<span>提供高端定制服务</span>
+					<a href="pages/content/service/service_1_atlas.html" class="more">
+						查看更多 <i></i>
+					</a>
+				</div>
+				<div class="service-list">
+					<div class="service-item service-box-1">
+						<a href="pages/content/service/service_1_atlas.html">
+							<img src="{{baseurl}}/theme/{{theme}}/images/service/service_bullet.jpg" alt="画册影集"></a>
+						<div class="subtitle">
+							<div class="cover">	
+								<h2>
+									<a href="">画册影集</a>
+								</h2>
+							</div>
+							<div class="mask"></div>
+						</div>
+					</div>
+					<div class="service-item service-box-2">
+						<a href="pages/content/service/service_2_documentary.html">
+							<img src="{{baseurl}}/theme/{{theme}}/images/service/service_shoot.jpg" alt="定制服务"></a>
+						<div class="subtitle">
+							<div class="cover">	
+								<h2>
+									<a href="">定制摄影</a>
+								</h2>
+							</div>
+							<div class="mask"></div>
+						</div>
+					</div>
+					<div class="service-item service-box-3">
+						<a href="pages/content/service/service_3_training.html">
+							<img src="{{baseurl}}/theme/{{theme}}/images/service/service_record.jpg" alt="记录跟拍"></a>
+						<div class="subtitle">
+							<div class="cover">	
+								<h2>
+									<a href="">记录跟拍</a>
+								</h2>
+							</div>
+							<div class="mask"></div>
+						</div>
+					</div>
+					<div class="service-item service-box-4">
+						<a href="pages/content/service/service_4_custom.html">
+							<img src="{{baseurl}}/theme/{{theme}}/images/service/service_product.jpg" alt="艺术品翻拍"></a>
+						<div class="subtitle">
+							<div class="cover">	
+								<h2>
+									<a href="">艺术品翻拍</a>
+								</h2>
+							</div>
+							<div class="mask"></div>
+						</div>
+					</div>
+					<div class="service-item service-box-5">
+						<a href="pages/content/service/service_5_advertisement.html">
+							<img src="{{baseurl}}/theme/{{theme}}/images/service/service_training.jpg" alt="摄影培训"></a>
+						<div class="subtitle">
+							<div class="cover">	
+								<h2>
+									<a href="">摄影培训</a>
+								</h2>
+							</div>
+							<div class="mask"></div>
+						</div>
+					</div>
+					<div class="service-item service-box-6">
+						<a href="pages/content/service/service_6_aerial.html">
+							<img src="{{baseurl}}/theme/{{theme}}/images/service/service_flight.jpg" alt="航拍"></a>
+						<div class="subtitle">
+							<div class="cover">	
+								<h2>
+									<a href="">航拍</a>
+								</h2>
+							</div>
+							<div class="mask"></div>
+						</div>
+					</div>
+					<div class="service-item service-box-7">
+						<a href="pages/content/service/service_7_recopy.html">
+							<img src="{{baseurl}}/theme/{{theme}}/images/service/service_ad.jpg" alt="商业广告"></a>
+						<div class="subtitle">
+							<div class="cover">	
+								<h2>
+									<a href="">商业广告</a>
+								</h2>
+							</div>
+							<div class="mask"></div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	{% endblock %}
+
+    {% include 'SkatingCmsBundle:Front/blocks:footer.html.twig' %}
+	<script src="{{baseurl}}/theme/{{theme}}/js/main.min.js"></script>
+	<script src="{{baseurl}}/theme/{{theme}}/js/module.min.js"></script>
+	<script type="text/javascript">
+		$(".g-service .service-item").each(function(){
+			var $this = $(this);
+			var href = $this.children("a").attr("href");
+			$this.find(".subtitle a").attr("href",href);
+		})
+	</script>
+</body>
+</html>

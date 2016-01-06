@@ -1,0 +1,449 @@
+/*user css*/
+
+.g-user {
+
+}
+.g-user .main-wrap {
+	margin-bottom: 80px;
+	min-height: 560px;
+}
+.g-user .shadow {
+	box-shadow: 0 1px 10px 0 #eee;
+}
+.g-user .left {
+	float: left;
+	width: 280px;
+	background-color: #fff;
+}
+.g-user .left .row {
+	padding: 10px;
+	border-bottom: 1px solid #eee;
+}
+
+.g-user .left .row-1 img {
+	float: left;
+	width: 140px;
+	height: 140px;
+}
+.g-user .left .row-1 dl {
+	margin-left: 160px;
+}
+.g-user .left .row-1 dt {
+	margin-bottom: 20px;
+	font-size: 16px;
+	color: #666;
+}
+.g-user .left .row-1 dd {
+	margin-bottom: 15px;
+}
+.g-user .left .row-1 dd a {
+	padding-left: 25px;
+	display: inline-block;
+	height: 20px;
+	background-repeat: no-repeat;
+	background-position: 4px 4px;
+	line-height: 20px;
+	color: #999;
+}
+.g-user .left .row-1 .icon_edit {
+	background-image: url("../../images/css_sprite/icon/icon_edit_person.png");
+}
+.g-user .left .row-1 .icon_logout {
+	background-image: url("../../images/css_sprite/icon/icon_logout.png");
+}
+.g-user .left .row-1 dd a:hover {
+	color: #e77a19;
+}
+
+.g-user .left .row-2 dl {
+	color: #333;
+}
+.g-user .left .row-2 dd {
+	padding: 4px 0 ;
+}
+.g-user .left .row-2 span {
+	font-size: 16px;
+	color: #e77a19;
+}
+.g-user .left .row-2 i {
+	position: relative;
+	top: 3px;
+	display: inline-block;
+	width: 20px;
+	height: 20px;
+	margin-right: 10px;
+	background-image: url("../../images/css_sprite/user.png");
+	background-repeat: no-repeat;
+}
+.g-user .left .icon_score {
+	background-position: 2px 2px;
+}
+.g-user .left .icon_following {
+	background-position: -33px 4px;
+}
+.g-user .left .icon_follower {
+	background-position: -69px 5px;
+}
+
+.g-user .left .row-3 .btn {
+	padding-left: 30px;
+	background: #fff url("../../images/css_sprite/icon/icon_downSlide.png") 2px 0 no-repeat;
+	color: #2279DC;
+}
+.g-user .left .row-3 .upSlide {
+	background: #fff url("../../images/css_sprite/icon/icon_upSlide.png") 2px 0 no-repeat;
+	color: #e77a19;
+}
+.g-user .left .row-3 .infolist {
+	display: none;
+	padding-top: 10px;
+}
+.g-user .left .infolist li {
+	padding: 5px;
+	color: #666;
+}
+.g-user .left .infolist li span {
+	display: inline-block;
+	width: 65px;
+	color: #999;
+}
+
+.g-user .main {
+	margin-left: 320px;
+	background-color: #fff;
+}
+
+/*  subnav  */
+.g-user .main .nav {
+	border-bottom: 1px solid #eee;
+	background-color: #f1f1f1;
+	font-size: 0;
+}
+.g-user .main .nav a {
+	display: inline-block;
+	padding: 0 25px;
+	border-right: 1px solid #e4e4e4;
+	height: 46px;
+	font-size: 14px;
+	line-height: 46px;
+}
+.g-user .main .nav .selected {
+	border-top: 3px solid #e77a19;
+	background-color: #fff;
+}
+/*  subnav end  */
+/*  tabChild  */
+.g-user .tabChild {
+	display: none;
+}
+.g-user .tabChild-1 {
+	display: block;
+}
+
+.g-user .main .sortbar-wrap {
+	padding: 10px;
+	border-bottom: 1px solid #eee;
+}
+.g-user .main .sortbar {
+	padding: 10px;
+}
+.g-user .main .sortbar span {
+	color: #999;
+}
+.g-user .main .sortbar a {
+	margin-left: 15px;
+}
+.g-user .main .upload {
+	float: right;
+	padding: 10px;
+	border-radius: 4px;
+	background-color: #e77a19;
+	color: #fff;
+}
+.g-user .main .upload:hover {
+	background-color: #DF771A;
+	color: #fff;
+}
+.g-user .main .upload:active {
+	background-color: #C86B18;
+}
+
+.g-user .main .personPic {
+
+}
+.g-user .main .picList {
+	width: 741px;
+}
+.g-user .main .picItem {
+	float: left;
+	padding: 10px 10px 0;
+	border-right: 1px solid #eee;
+	border-bottom: 1px solid #eee;
+	width: 226px;
+}
+.g-user .main .picItem img {
+	width: 226px;
+	height: 160px;
+	transition:.4s;
+	-weblit-transition:.4s;
+}
+.g-user .main .picItem img:hover {
+	box-shadow: 0 1px 10px 0 #aaa;
+}
+.g-user .main .picItem p {
+	padding: 10px 0;
+}
+.g-user .main .picControl {
+	padding-bottom:10px;
+}
+.g-user .main .picControl a {
+	float: right;
+	margin-left:5px;
+	width: 20px;
+	height: 20px;
+	background-image: url("../../images/css_sprite/user.png");
+	cursor: pointer;
+}
+/*编辑图片*/
+.g-user .main .picEdit {
+	background-position: 2px -54px;
+}
+.g-user .main .picEdit:hover {
+	background-position: 2px -28px;
+}
+/*删除图片*/
+.g-user .main .picDelete {
+	background-position: -33px -54px;
+}
+.g-user .main .picDelete:hover {
+	background-position: -33px -28px;
+}
+
+/*下载图片*/
+.g-user .main .picDownload {
+	background-position: -70px -57px;
+}
+.g-user .main .picDownload:hover {
+	background-position: -70px -31px;
+}
+/*图片版权信息*/
+.g-user .main .picCopyright {
+	background-position: -111px -57px;
+}
+.g-user .main .picCopyright:hover {
+	background-position: -111px -31px;
+}
+
+/*翻页器*/
+.g-user .m-page-wrap {
+	padding: 30px 0;
+}
+
+/*个人信息编辑*/
+.g-user .form-wrap,
+.g-user .accountList {
+	padding: 20px;
+}
+/*  正文  */
+.g-user .m-form .form-text {
+	margin-right: 40px;
+}
+/*  person info  */
+.g-user .infoForm .formRow,
+.g-user .addForm .formRow,
+.g-user .pswForm .formRow {
+	margin-bottom: 20px;
+}
+.g-user .addForm .form-name,
+.g-user .addForm .input-text,
+.g-user .pswForm .form-name,
+.g-user .pswForm .input-text,
+.g-user .infoForm .form-name,
+.g-user .infoForm .input-text {
+	width: 240px;
+	height: 20px;
+	font-size: 14px;
+} 
+.g-user .addForm .form-name,
+.g-user .pswForm .form-name,
+.g-user .infoForm .form-name {
+	width: 90px;
+	text-align: right;
+}
+.g-user .infoForm .area .select,
+.g-user .addForm .area .select {
+	width: 110px;
+	height: 30px;
+	margin-right: 20px;
+}
+.g-user .addForm .submit,
+.g-user .pswForm .submit,
+.g-user .infoForm .submit {
+	padding-top: 40px;
+	padding-left: 110px;
+}
+.g-user .addForm .submit button,
+.g-user .pswForm .submit button,
+.g-user .infoForm .submit button {
+	margin-right: 30px;
+	width: 100px;
+	height: 30px;
+	font-size: 14px;
+}
+
+/*  headicon  */
+.g-user .headForm {
+	float: left;
+	width: 300px;
+	padding-right: 25px;
+	border-right: 1px dotted #eee;
+}
+/*  上传图片按钮  */
+.g-user .headForm .uploadPic button{
+	padding-left: 30px;
+	width: 120px;
+	height: 35px;
+	background-repeat: no-repeat;
+	font-size: 0;
+}
+/*  按钮文字  */
+.g-user .headForm .uploadPic .input-file {
+	visibility: hidden;
+}
+.g-user .headForm .uploadPic span {
+	position: relative;
+	top: -2px;
+	display: inline-block;
+	border-left: 1px solid #ddd;
+	padding-left: 10px;
+	height: 35px;
+	font-size: 14px;
+	line-height: 35px;
+	letter-spacing: 0;
+}
+.g-user .headForm .addPic {
+	float: left;
+	background-image: url("../../images/css_sprite/icon/icon_upload.png");
+	background-position: 9px 10px;
+}
+.g-user .headForm .camera {
+	float: right;
+	background-image: url("../../images/css_sprite/icon/icon_camera_headicon.png");
+	background-position: 9px 10px;
+}
+.g-user .headForm p {
+	padding: 10px 0;
+	font-size: 10px;
+	color: #999;
+}
+.g-user .headForm .display {
+	width: 300px;
+	height: 300px;
+}
+.g-user .headForm .submit {
+	margin-top: 10px;
+	padding-left: 30px;
+}
+.g-user .headForm .submit .input-submit {
+	margin: 10px;
+	width: 100px;
+	height: 36px;
+	font-size: 14px;
+}
+/*  right  */
+.g-user .headForm-right {
+	float: right;
+	width: 350px;
+}
+.g-user .headForm-right {
+	font-size: 12px;
+	line-height: 1.8em;
+	color: #333;
+}
+.g-user .headForm-right dt {
+	font-size: 14px;
+	margin-bottom: 20px;
+}
+.g-user .headForm-right dd {
+	font-size: 10px;
+	text-align: center;
+}
+.g-user .headForm-right dd img {
+	margin-bottom: 4px;
+}
+.g-user .scale-l {
+	float: left;
+}
+.g-user .scale-m {
+	float: right;
+}
+.g-user .scale-s {
+	position: relative;
+	top: 7px;
+	left: -31px;
+	float: right;
+}
+/* img scale  */
+.g-user .scale-l img {
+	width: 200px;
+	height: 200px;
+}
+.g-user .scale-m img {
+	width: 120px;
+	height: 120px;
+}
+.g-user .scale-s img {
+	width: 48px;
+	height: 48px;
+}
+.g-user .headForm-right li {
+	padding: 10px 0;
+}
+.g-user .headForm-right li.notice {
+	color: #e77a19;
+}
+/*  account  */
+.g-user .accountList h1 {
+	padding-bottom: 16px;
+	border-bottom: 1px solid #ddd;
+	font-weight: normal;
+	font-size: 20px;
+	color: #1b1b1b;
+}
+.g-user .accountList p {
+	padding: 16px 0;
+	font-size: 14px;
+	color: #1b1b1b;
+}
+.g-user .accountList ul {
+	margin: 40px 0;
+}
+.g-user .accountList li {
+	margin-bottom: 40px;
+	padding-bottom: 15px;
+	border-bottom: 1px solid #ddd;
+	font-size: 14px;
+	color: #333;
+}
+.g-user .accountList img {
+	width: 38px;
+	height: 38px;
+	margin-right: 20px;
+}
+.g-user .accountList li a {
+	display: inline-block;
+	float: right;
+	width: 70px;
+	height: 30px;
+	border-radius: 4px;
+	background-color: #e77a19;
+	line-height: 30px;
+	color: #fff;
+	text-align: center;
+}
+.g-user .accountList li a:hover {
+	background-color: #DB751A;
+}
+.g-user .accountList li a:active {
+	background-color: #B15E15;
+}

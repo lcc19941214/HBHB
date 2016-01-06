@@ -1,0 +1,235 @@
+/* picDetails css  */
+.shadow {
+	box-shadow: 0 1px 8px 0 #ddd;
+}
+.g-content .main-wrap {
+	margin-bottom: 40px;
+}
+.g-content .main .left {
+	float: left;
+	width: 532px;
+	background-color: #fff;
+}
+.g-content .left .info {
+	padding: 16px;
+	border-bottom: 1px solid #eee;
+}
+.g-content .left .info span {
+	margin-right: 10px;
+	font-size: 14px;
+	color: #666;
+}
+.g-content .left .showArea {
+	padding: 27px 37px;
+	border-bottom: 1px solid #eee;
+}
+.g-content .left .showArea img {
+	width: 458px;
+}
+.g-content .left .toolBar-wrap {
+	padding: 20px;
+	text-align: center;
+}
+.g-content .left .toolBar a {
+	display: inline-block;
+	height: 24px;
+	margin: 0 20px;
+	font-size: 14px;
+	line-height: 24px;
+}
+.g-content .left .toolBar a i {
+	position: relative;
+	top: 7px;
+	left: 2px;
+	display: inline-block;
+	width: 22px;
+	height: 24px;
+	margin-right: 10px;
+	background-image: url("../../images/css_sprite/pictures.png")
+}
+.g-content .left .download i {
+	background-position: -33px 0;
+}
+.g-content .left .download:hover i {
+	background-position: -33px -26px;
+}
+.g-content .left .favor i {
+	background-position: -97px -1px;
+}
+.g-content .left .favor:hover i {
+	background-position: -97px -27px;
+}
+.g-content .left .selected i ,
+.g-content .left .selected:hover  i {
+	background-position: -128px -1px;
+}
+
+.g-content .right {
+	float: right;
+	width: 508px;
+	background-color: #fff;
+}
+/*  subnav  */
+.g-content .right .nav {
+	background-color: #f1f1f1;
+	font-size: 0;
+}
+.g-content .right .nav a {
+	display: inline-block;
+	padding: 0 25px;
+	border-right: 1px solid #e4e4e4;
+	height: 48px;
+	font-size: 14px;
+	line-height: 48px;
+}
+.g-content .right .nav .selected {
+	border-top: 3px solid #e77a19;
+	background-color: #fff;
+}
+/*  subnav end  */
+
+.g-content .tabChild {
+	/*display: none;*/
+}
+.g-content .tabChild-1 {
+	display: none;
+}
+
+/*  table desc  */
+.g-content .table-wrap {
+	font-size: 12px;
+	color: #666;
+}
+.g-content .table-wrap table {
+	width: 100%;
+	height: 428px;
+	border-collapse: collapse;
+}
+.g-content .table-wrap tr {
+	border-top: 1px solid #eee;
+}
+.g-content .table-wrap tr:nth-child(even) {
+	background-color: #fafafa;
+}
+.g-content .table-wrap td {
+	padding: 10px 20px;
+	border-right: 1px solid #eee;
+}
+.g-content .table-wrap td.title {
+	width: 66px;
+}
+
+/*  form info  */
+.g-content .right .form-wrap {
+}
+.g-content .right .formRow {
+	margin-bottom: 30px;
+}
+.g-content .right .formRow dt {
+	position: relative;
+	padding: 10px 20px;
+	margin-bottom: 10px;
+	border-top: 1px solid #ddd;
+	border-bottom: 1px solid #ddd;
+	font-size: 14px;
+	color: #666;
+}
+.g-content .right .formRow .title,
+.g-content .right .formRow .icon-info {
+	float: left;
+	margin-right: 10px;
+	color: #e77a19;
+}
+/*  icon-info clcik to show details  */
+.g-content .right .icon-info {
+	width: 20px;
+	height: 20px;
+	background: url("../../images/css_sprite/pictures.png") -154px -29px no-repeat;
+}
+.g-content .right .info-detail {
+	display: none;
+	position: absolute;
+	top: 40px;
+	left: 0;
+	padding: 10px;
+	font-size: 12px;
+	line-height: 1.6em;
+	color: #fff;
+	background-color: #e77a19;
+}
+.g-content .right .formRow .toRight {
+	float: right;
+	color: #999;
+}
+.g-content .right .formControls {
+	padding: 15px 20px 15px 60px;
+}
+.g-content .right .formControls .input-check {
+}
+.g-content .right .formControls span {
+	margin-left: 38px;
+	font-size: 14px;
+	color: #666;
+}
+
+/*  submit  */
+.g-content .right .submit {
+	padding-left: 0;
+	padding-right: 0;
+}
+.g-content .right .submit .button {
+	display: inline-block;
+	margin: 0 47.5px;
+	width: 147px;
+	height: 40px;
+	font-size: 14px;
+	line-height: 40px;
+	color: #fff;
+}
+.g-content .right .toBuy {
+	background-color: #75c98e;
+}
+.g-content .right .toBuy:hover {
+	background-color: #6DBB86;
+}
+.g-content .right .toBuy:active {
+	background-color: #64AA7B;
+}
+.g-content .right .toCart {
+	background-color: #e77a19;
+}
+.g-content .right .toCart:hover {
+	background-color: #DB751A;
+}
+.g-content .right .toCart:active {
+	background-color: #B15E15;
+}
+
+/*  similarlist*/
+.g-content .similarList-wrap {
+	margin-top: 40px;
+}
+.g-content .similarList-wrap h1 {
+	padding-left: 15px;
+	margin: 16px 0;
+	border-left: 4px solid #e77a19;
+	font-size: 18px;
+	color: #333;
+}
+.g-content .similarList {
+	margin-left: -5px;
+	width: 1070px;
+	overflow: hidden;
+}
+.g-content .similarItem {
+	float: left;
+	width: 204px;
+	height: 140px;
+	margin: 0 5px 10px;
+	overflow: hidden;
+	transition:.4s;
+	-webkit-transition:.4s;
+}
+.g-content .similarItem:hover {
+	box-shadow: 0 1px 10px 0 #999;
+}

@@ -1,0 +1,85 @@
+/*sidebar css*/
+
+.g-sdbar .sdbar-wrap {
+	position: fixed;
+	top: 0;
+	right: 0;
+	z-index: 900;
+	height: 100%;
+}
+.g-sdbar .sdbar {
+	width: 4px;
+	height: 100%;
+	background-color: #8b8b8b;
+}
+.g-sdbar .sdbar ul {
+	position:absolute;
+	top:50%;
+	right: 0;
+	margin-top: -99px;
+	z-index: 10;
+}
+.g-sdbar .sdbar li {
+	position: relative;
+	margin-bottom: 1px;
+	height: 32px;
+	font-size: 0;
+}
+.g-sdbar .sdbar li a {
+	font-size: 12px;
+	line-height: 32px;
+	color: #fff;
+}
+.g-sdbar .sdbar li span,
+.g-sdbar .sdbar li i {
+	border-top-left-radius: 4px;
+	border-bottom-left-radius: 4px;
+	height: 32px;
+}
+.g-sdbar .sdbar li span {
+	position: absolute;
+	/*show*/
+	/*right: 0px;*/
+	/*hide*/
+	right:-66px; 
+	padding-left: 8px;
+	width: 92px;
+	background-color: #e77a19;
+}
+.g-sdbar .sdbar li img {
+	position: absolute;
+	right: 40px;
+	display: none;
+}
+.g-sdbar .sdbar li i {
+	position: absolute;
+	right: 0;
+	z-index:20;
+	display: inline-block;
+	width: 34px;
+	background-color: #8b8b8b;
+	background-image: url("../../images/css_sprite/sprite.png");
+	transition: .6s;
+	-webkit-transition: .6s;
+}
+.g-sdbar .sdbar li i:hover {
+	background-color: #e77a19;
+}
+.g-sdbar .sdbar .icon-submit {
+	background-position: 5px -83px;
+}
+.g-sdbar .sdbar .icon-weibo {
+	background-position: -24px -82px;
+}
+.g-sdbar .sdbar .icon-wechat {
+	background-position: -55px -81px;
+}
+.g-sdbar .sdbar .icon-service {
+	background-position: -86px -82px;
+}
+.g-sdbar .sdbar .icon-app {
+	background-position: -116px -82px;
+}
+.g-sdbar .sdbar .icon-top {
+	background-position: -144px -82px;
+}

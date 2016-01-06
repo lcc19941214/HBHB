@@ -1,0 +1,144 @@
+/*module form*/
+
+/*  表单单行 wrap  */
+.m-form .formRow {
+	margin-bottom: 40px;
+}
+.m-form .submit {
+	margin-bottom: 0;
+}
+/*  表单内部 控件  */
+.m-form .formControls {
+	font-size: 0;/*clear inline-block bug*/
+}
+
+input, button, textarea, select {
+	font: 12px "Microsoft Yahei",arial,helvetica;
+}
+
+/*  input前文字  <span>  */
+.m-form .form-name {
+	display: inline-block;
+	width: 120px;
+	margin-right: 20px;
+	font-size: 18px;
+	letter-spacing: 3px;
+	color: #333;
+}
+/*  input正文文字*/
+.m-form .form-text {
+	font-size: 14px;
+}
+/*  input后 提示文字  <span>  */
+.m-form .form-tips {
+	margin-left: 20px;
+	font-size: 12px;
+	color: #999;
+}
+
+/*  input[type=text/password]  */
+.m-form .input-text {
+	padding: 4px 10px ;
+	width: 200px;
+	height: 31px;
+
+	/*  font  */
+	font-size: 16px;
+	color: #454545;
+
+	/*  box-modle  */
+	border: 1px solid #ddd;
+	outline: none;
+	background-color: #fff;
+
+	transition:.6s;
+	-webkit-transition:.6s;
+}
+.m-form .input-text.focus {
+	color: #e77a19;
+	border: 1px solid #e77a19;
+}
+.m-form .input-text.disabled {
+	background-color: #eeeeee;
+}
+/*  input check valid*/
+.m-form .input-text.validWrong {
+	color: red;
+	border: 1px solid red;
+	background-color: #ddd;
+}
+/*  验证码 img */
+.m-form .verifyCode {
+	margin-left: 20px;
+	position: relative;
+	top: -7px;
+	width: 100px;
+	height: 41px;
+}
+/*  input[type=check/radio]  margin  */
+.m-form .input-check,
+.m-form .input-radio {
+	margin-right: 10px;
+}
+/*  button  */
+.m-form .input-submit {
+	border:none;
+	outline: none;
+	width: 300px;
+	height: 50px;
+	border-radius: 4px;
+	background-color: #e77a19;
+	font-size: 18px;
+	letter-spacing: 4px;
+	text-align: center;
+	color: #fff;
+}
+.m-form .input-submit:hover {
+	background-color: #DB751A;
+}
+.m-form .input-submit:active {
+	background-color: #B15E15;
+}
+.m-form .input-reset {
+	border: 1px solid #ddd;
+	background-color: #f1f1f1;
+	color: #333;
+}
+.m-form .input-reset:hover {
+	background-color: #E3E3E3;
+}
+.m-form .input-reset:active {
+	background-color: #C7C7C7;
+}
+
+.m-form .button {
+	border-radius: 4px;
+	padding: 4px 6px;
+	border: none;
+	outline: none;
+	background-color: #e77a19;
+	color: #fff;
+}
+.m-form .button:hover {
+	background-color: #DB751A;
+}
+.m-form .button:active {
+	background-color: #B15E15;
+}
+.m-form a.button {
+	color: #fff;
+}
+/*  button cancel/delete  */
+.m-form .button_delete {
+	background-color: #f1f1f1;
+	color: #333;
+}
+.m-form .button_delete:hover {
+	background-color: #E3E3E3;
+}
+.m-form .button_delete:active {
+	background-color: #C7C7C7;
+}
+.m-form a.button_delete {
+	color: #333;
+}

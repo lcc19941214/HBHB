@@ -1,0 +1,82 @@
+/*pager css*/
+
+.m-page-wrap {
+	padding-top: 16px;
+	text-align: center;
+}
+.m-page {
+	display: inline-block;
+	line-height: 40px;
+}
+.m-page ul {
+	position: relative;
+	float: left;
+}
+.m-page .item {
+	position: relative;
+	float: left;
+	border: 1px solid #ddd;
+	margin-left: -1px;
+}
+.m-page .item:hover {
+	z-index: 1;
+	border: 1px solid #e77a19;
+	color: #e77a19;
+}
+
+.m-page .item a {
+	float: left;
+	padding: 0 16px;
+	height: 38px;
+	color: #333;
+	text-align: center;
+}
+.m-page .item:hover a {
+	color: #e77a19;
+}
+
+.m-page .pager{
+	margin-right: 20px;
+}
+.m-page .pager-disable,
+.m-page .pager-disable:hover {
+	border-color: #e1e1e1;
+}
+.m-page .pager-disable a,
+.m-page .pager-disable:hover a {
+	color: #e1e1e1;
+}
+
+.m-page .dot,
+.m-page .dot:hover {
+	margin: 0 20px;
+	border: none;
+}
+.m-page .item.current {
+	border: none;
+	height: 40px;
+	background-color: #e77a19;
+	color: #fff;
+}
+.m-page .item.current a {
+	color: #fff;
+}
+
+.m-page .right {
+	float: left;
+}
+.m-page .input,
+.m-page .btn {
+	border: 1px solid #ddd;
+	outline: none;
+	background-color: #fff;
+}
+.m-page .input {
+	padding-left: 4px;
+	width: 40px;
+}
+.m-page .btn:hover,
+.m-page .btn:active {
+	border-color: #e77a19;
+	color: #e77a19;
+}

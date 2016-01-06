@@ -1,0 +1,75 @@
+/*header*/
+
+.g-header .topinfo-wrap {
+	height: 30px;
+	background-color: #696969;
+}
+.g-header .topinfo {
+	font-size:14px;
+	line-height: 30px;
+	color: #ddd;
+}
+.g-header .topinfo span {
+	float:left;
+}
+.g-header .topinfo .user {
+	float: right;
+}
+.g-header .topinfo .user a {
+	margin-left: 12px;
+	color: #ddd;
+}
+.g-header .topinfo a.login,
+.g-header .topinfo a.rigister {
+	color: #fff;
+}
+
+.g-header .header-wrap {
+	padding: 38px 0 35px;
+	/*height: 139px;*/
+	background-color: #fafafa;
+}
+.g-header .header .logo {
+
+}
+.g-header .header .search {
+	float: right;
+	font-size: 0;/*  clear inline-block bug  */
+	color: #999;
+}
+.g-header .header .search input[type="text"] {
+	padding-left: 10px;
+	border:2px solid #e77a19;
+	box-shadow:inset 0 0 5px #ddd;
+	width: 370px;
+	height: 34px;
+	font-size: 16px;
+}
+.g-header .header .search input[type="submit"] {
+	border: 0;
+	width: 108px;
+	height: 38px;
+	background-color: #e77a19;
+	font-size: 16px;
+	color: #fff;
+}
+.g-header .header .search input[type="submit"]:active {
+	background-color: #BA6315;
+}
+
+.g-header .header .recommlist {
+	margin-top: 8px;
+	height: 20px;
+	font-size: 0;
+}
+.g-header .header .recommlist li {
+	display: inline-block;
+	margin-right: 10px;
+	font-size: 14px;
+}
+.g-header .header .recommlist li a {
+	color: #999;
+}
+.g-header .header .recommlist em {
+	color: #e77a19
+}

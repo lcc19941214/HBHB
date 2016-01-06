@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+	<title>确认支付 | 数字图片湖北</title>
+	<meta charset="utf-8">
+	<meta name="description" content="">
+	<link rel="shortcut icon" href="{{baseurl}}/theme/{{theme}}/images/icons/favicon.ico" type="image/x-icon"/>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" >
+	<link rel="stylesheet" href="{{baseurl}}/theme/{{theme}}/css/reset.css">
+	<link rel="stylesheet" href="{{baseurl}}/theme/{{theme}}/css/base_block.css">
+	<link rel="stylesheet" href="{{baseurl}}/theme/{{theme}}/css/module/sdbar.css">
+	<link rel="stylesheet" href="{{baseurl}}/theme/{{theme}}/css/module/form.css">
+	<link rel="stylesheet" href="{{baseurl}}/theme/{{theme}}/css/pages/trade.css">
+	<link rel="stylesheet" href="{{baseurl}}/theme/{{theme}}/css/response.css">
+	<script src="http://cdn.bootcss.com/jquery/1.8.3/jquery.js"></script>
+</head>
+<body>
+	{% include 'SkatingCmsBundle:Front/blocks:header.html.twig' %}
+
+	{% include 'SkatingCmsBundle:Front/blocks:filter.html.twig' %}
+
+	{% block maincontent %}
+	<div class="g-trade">
+		<div class="trade-box-wrap">
+			<div class="trade-box container m-form">
+				<!-- processing -->
+				<div class="processBar-wrap row row-1 box-style">
+					<div class="processBar">
+						<ul class="clearfix">
+							<li class="item">
+								<div class="icon-method"></div>
+								<p>选择支付方式</p>
+							</li>
+							<li>
+								<div class="icon-line"></div>
+							</li>
+							<li class="item current">
+								<div class="icon-pay"></div>
+								<p>支付</p>
+							</li>
+							<li>
+								<div class="icon-line"></div>
+							</li>
+							<li class="item">
+								<div class="icon-download"></div>
+								<p>获得图片下载链接</p>
+							</li>
+						</ul>
+					</div>
+				</div>
+				<!-- 确认支付方式 -->
+				<div class="m-tips-bar pay-tips box-style">
+					<div class="tips-bar">
+						<p>你已选择<em>在线支付-支付宝</em>方式，请点击<em>付款</em>按钮完成支付</p>
+					</div>
+				</div>
+				<div class="main clearfix">
+					<!-- 常见疑问 -->
+					<div class="qaList-wrap box-style">
+						<div class="qaList">
+							<dl>
+								<dt>常见问题</dt>
+								<dd>
+									<dl class="asBlock">
+										<dt><a href="javascript:;">余额充值</a><i class="icon-downSlide"></i></dt>
+										<dd>到底发生了什么？到底发生了什么？到底发生了什么？到底发生了什么？到底发生了什么？到底发生了什么？到底发生了什么？到底发生了什么？到底发生了什么？到底发生了什么？到底发生了什么？</dd>
+									</dl>
+								</dd>
+								<dd>
+									<dl class="asBlock">
+										<dt><a href="javascript:;">授权书</a><i class="icon-downSlide"></i></dt>
+										<dd>到底发生了什么？到底发生了什么？到底发生了什么？到底发生了什么？到底发生了什么？到底发生了什么？到底发生了什么？到底发生了什么？到底发生了什么？到底发生了什么？到底发生了什么？</dd>
+									</dl>
+								</dd>
+								<dd>
+									<dl class="asBlock">
+										<dt><a href="javascript:;">套餐计划</a><i class="icon-downSlide"></i></dt>
+										<dd>到底发生了什么？到底发生了什么？到底发生了什么？到底发生了什么？到底发生了什么？到底发生了什么？到底发生了什么？到底发生了什么？到底发生了什么？到底发生了什么？到底发生了什么？</dd>
+									</dl>
+								</dd>
+								<dd>
+									<dl class="asBlock">
+										<dt><a href="javascript:;">样图与高清样图</a><i class="icon-downSlide"></i></dt>
+										<dd>到底发生了什么？到底发生了什么？到底发生了什么？到底发生了什么？到底发生了什么？到底发生了什么？到底发生了什么？到底发生了什么？到底发生了什么？到底发生了什么？到底发生了什么？</dd>
+									</dl>
+								</dd>
+								<dd>
+									<dl class="asBlock">
+										<dt><a href="javascript:;">发票</a><i class="icon-downSlide"></i></dt>
+										<dd>到底发生了什么？到底发生了什么？到底发生了什么？到底发生了什么？到底发生了什么？到底发生了什么？到底发生了什么？到底发生了什么？到底发生了什么？到底发生了什么？到底发生了什么？</dd>
+									</dl>
+								</dd>
+								<dd class="last">
+									<a href="javascript:;">&gt;更多问题，请查看帮助中心</a>
+								</dd>
+							</dl>
+						</div>
+					</div>
+					<!-- 支付模块 -->
+					<div class="pay-comfirm-wrap box-style">
+						<div class="pay-comfirm">
+							<p><strong>购买总金额</strong>：<em>￥12</em>在线支付-支付宝</p>
+							<p>小计：<em>12</em>元人民币</p>
+							<a href="javascript:;" class="button z-button">付款</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- 付款弹窗 -->
+		<div class="comfirm-alert-wrap">
+			<div class="comfirm-alert clearfix m-form">
+				<div class="row row-1">
+					<h1>请您在新打开的页面上完成付款</h1>
+				</div>
+				<div class="row row-2">
+					<p>付款完成前请不要关闭此窗口，完成付款后请根据您的情况点击下面的按钮：</p>
+				</div>
+				<div class="row row-3">
+					<a href="trade_download.html" class="button z-button-1">已完成付款</a>
+					<a href="javascript:;" class="button z-button-2">付款时遇到困难</a>
+				</div>
+				<div class="f-close"></div>
+			</div>
+			<div class="mask"></div>
+		</div>
+	</div>
+	<script type="text/javascript">
+		// 支付确认弹窗
+		$(".g-trade .pay-comfirm .button").click(function() {
+			$(".g-trade .comfirm-alert-wrap").show();
+		})
+		$(".g-trade .comfirm-alert-wrap .f-close").click(function() {
+			$(this).parents(".comfirm-alert-wrap").hide();
+		})
+
+		// 常见问题折叠
+		$(".g-trade .qaList .asBlock").each(function() {
+			$(this).find("dt a").click(function() {
+				$(this).parent().siblings("dd").slideToggle("400");
+			})
+		})
+	</script>
+	{% endblock %}
+
+    {% include 'SkatingCmsBundle:Front/blocks:footer.html.twig' %}
+	<script src="{{baseurl}}/theme/{{theme}}/js/sdbar.js"></script>
+	<script src="{{baseurl}}/theme/{{theme}}/js/form.js"></script>
+</body>
+</html>

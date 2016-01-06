@@ -1,0 +1,38 @@
+/*rigister css*/
+
+.g-rigister .main-wrap {
+	/*padding: 40px 0 ;*/
+	margin-bottom: 40px;
+}
+.g-rigister .form-wrap {
+	border: 1px solid #eee;
+	background-color: #fff;
+	box-shadow: 0 1px 5px 0 #eee;
+}
+.g-rigister .form-wrap h1 {
+	display: block;
+	padding: 10px;
+	font-weight: normal;
+	font-size: 22px;
+	color: #fff;
+	text-indent: 1em;
+	background-color: #e77a19;
+}
+.g-rigister .rgForm {
+	padding: 40px;
+}
+.g-rigister .rgForm .input-text {
+	width: 400px;
+}
+.g-rigister .rgForm .submit {
+	margin-left: 140px;
+	margin-bottom: 0;
+}
+.g-rigister .rgForm .submit .formControls p {
+	margin-bottom: 20px;
+	font-size: 14px;
+	color: #333;
+}
+.g-rigister .rgForm .submit .formControls a {
+	color: #e77a19;
+}

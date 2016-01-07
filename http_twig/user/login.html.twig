@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+	<title>登陆 | 数字图片湖北</title>
+	<meta charset="utf-8">
+	{% include 'SkatingCmsBundle:Front/blocks:head_info.html.twig' %}
+</head>
+<body>
+    {% include 'SkatingCmsBundle:Front/blocks:header.html.twig' %}
+
+	{% block maincontent %}
+	<div class="g-login">
+		<div class="main-wrap">
+			<div class="login clearfix">
+				<div class="form-wrap">
+					<h1>湖北画报会员登录</h1>
+					<form class="logForm m-form" action="javascript:;" method="post">
+						<div class="formRow">
+							<div class="formControls">
+								<input type="text" class="input-text" tabindex="1" autocomplete="off" placeholder="用户名">
+							</div>
+						</div>
+						<div class="formRow">
+							<div class="formControls">
+								<input type="password" class="input-text" tabindex="2" autocomplete="off" placeholder="密码">
+							</div>
+						</div>
+						<div class="formRow">
+							<div class="checkbox">
+								<label>
+									<input type="checkbox" class="left input-check" tabindex="3">记住登录状态
+								</label>
+								<a href="javascript:;" class="right">忘记密码？</a>
+								<span class="right">|</span>
+								<a href="http://202.114.71.171/~2013g2/user/rigister" class="right">注册新账号</a>
+							</div>
+						</div>
+						<div class="formRow submit">
+							<div class="formControls">
+								<button type="submit" class="input-submit" tabindex="4">登陆</button>
+							</div>
+						</div>
+					</form>
+				</div>
+				<div class="third-login">
+					<div class="third-group">
+						<p>使用第三方账号登陆</p>
+						<a href="javascript:;"><img src="{{baseurl}}/theme/{{theme}}/images/login/big_blog_qq.png" alt="qq登陆"></a>
+						<a href="javascript:;"><img src="{{baseurl}}/theme/{{theme}}/images/login/big_blog_wechat.png" alt="微信登陆"></a>
+						<a href="javascript:;"><img src="{{baseurl}}/theme/{{theme}}/images/login/big_blog_sina.png" alt="微博登陆"></a>
+					</div>
+				</div>
+			</div>
+			<!-- <div class="bg-img-mask">
+				<div class="bg-img"></div>
+			</div> -->
+		</div>
+	</div>
+	{% endblock %}
+
+	{% include 'SkatingCmsBundle:Front/blocks:footer.html.twig' %}
+
+	<script src="{{baseurl}}/theme/{{theme}}/js/main.min.js"></script>
+	<script src="{{baseurl}}/theme/{{theme}}/js/module.min.js"></script>
+</body>
+</html>

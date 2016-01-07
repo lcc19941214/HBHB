@@ -84,7 +84,6 @@
 }
 
 .g-content-service .service-item .text {
-	width: 65%;
 	text-indent: 2em;
 	text-align: justify;
 }
@@ -94,7 +93,7 @@
 
 .g-content-service .service-item .display {
 	float: right;
-	margin: 20px;
+	margin:0 0 20px 20px;
 	width: 30%;
 }
 .g-content-service .service-item .display img {

@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+	<title>选择支付方式 | 数字图片湖北</title>
+	<meta charset="utf-8">
+	{% include 'SkatingCmsBundle:Front/blocks:head_info.html.twig' %}
+</head>
+<body>
+    {% include 'SkatingCmsBundle:Front/blocks:header.html.twig' %}
+
+	{% block maincontent %}
+	<div class="g-trade">
+		<div class="trade-box-wrap">
+			<div class="trade-box container m-form box-style" >
+				<!-- processing -->
+				<div class="processBar-wrap row row-1">
+					<div class="processBar">
+						<ul class="clearfix">
+							<li class="item current">
+								<div class="icon-method"></div>
+								<p>选择支付方式</p>
+							</li>
+							<li>
+								<div class="icon-line"></div>
+							</li>
+							<li class="item">
+								<div class="icon-pay"></div>
+								<p>支付</p>
+							</li>
+							<li>
+								<div class="icon-line"></div>
+							</li>
+							<li class="item">
+								<div class="icon-download"></div>
+								<p>获得图片下载链接</p>
+							</li>
+						</ul>
+					</div>
+				</div>
+				<!-- 选择支付方式 -->
+				<div class="trade-comfirm-wrap row row-2">
+					<div class="trade-comfirm">
+						<h1>选择支付方式</h1>
+						<ul>
+							<li>
+								<label>
+									<input class="input-radio" type="radio" name="trade-method">支付宝</li>
+							</label>
+							<li>
+								<label>
+									<input class="input-radio" type="radio" name="trade-method">网银支付</li>
+							</label>
+							<li>
+								<label>
+									<input class="input-radio" type="radio" name="trade-method">公司转账</label>
+							</li>
+							<li>
+								<label>
+									<input class="input-radio" type="radio" name="trade-method">积分支付</label>
+							</li>
+							<li>
+								<label>
+									<input class="input-radio" type="radio" name="trade-method">套餐支付</label>
+							</li>
+							<li>
+								<label>
+									<input class="input-radio" type="radio" name="trade-method">余额支付</label>
+							</li>
+						</ul>
+					</div>
+				</div>
+				<!-- 发票信息 -->
+				<div class="trade-receipt-wrap row row-3">
+					<h1>发票信息<a class="btn-downSlide" href="javascript:;">添加发票</a></h1>
+					<p>每次充值后都可以开具相应的发票，总计开票金额超过200元人民币时，我们将免费邮寄发票。若不足200元申请开票时，我们将寄出到付快递。</p>
+				</div>
+				<div class="trade-receipt">
+					<dl class="row trade-form">
+						<h1>开具发票</h1>
+						<dd>
+							<span class="form-name">发票类型</span>
+							<label>
+								<input class="input-radio" type="radio" name="receipt-1">增值税普通发票
+							</label>
+							<label>
+								<input class="input-radio" type="radio" name="receipt-1">增值税专用发票
+							</label>
+						</dd>
+						<dd>
+							<span class="form-name">发票抬头</span>
+							<label>
+								<input class="input-radio" type="radio" name="receipt-2">单位
+							</label>
+							<label>
+								<input class="input-radio" type="radio" name="receipt-2">个人
+							</label>
+						</dd>
+						<dd>
+							<span class="form-name">开票项目</span>
+							<input type="text" class="input-text disabled" placeholder="版权使用费" disabled="">
+						</dd>
+						<dd>
+							<span class="form-name">单位名称</span>
+							<input type="text" class="input-text">
+						</dd>
+					</dl>
+					<dl class="row trade-form">
+						<h1>收件人信息</h1>
+						<dd>
+							<span class="form-name">联系人</span>
+							<input type="text" class="input-text">
+						</dd>
+						<dd>
+							<span class="form-name">邮寄地址</span>
+							<input type="text" class="input-text">
+						</dd>
+						<dd>
+							<span class="form-name">电话</span>
+							<input type="text" class="input-text">
+						</dd>
+					</dl>
+				</div>
+				<!-- 提交订单 -->
+				<div class="trade-submit-wrap row row-4 clearfix">
+					<label>
+						<input type="checkbox" class="input-check">我已阅读并同意图片湖北<a href="javascript:;">授权协议</a>
+					</label>
+					<div class="trade-submit">
+						<span>订单号：23232323</span>
+						<span>总计：图片<em>1</em>张</span>
+						<span>金额片<em>￥12</em></span>
+						<a class="button" href="trade_pay">提交订单</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<script type="text/javascript">
+		// 下拉发票
+		$(".g-trade .btn-downSlide").click(function() {
+			$(".g-trade .trade-receipt").slideToggle(400);
+		})
+	</script>
+	{% endblock %}
+
+    {% include 'SkatingCmsBundle:Front/blocks:footer.html.twig' %}
+	<script src="{{baseurl}}/theme/{{theme}}/js/main.min.js"></script>
+	<script src="{{baseurl}}/theme/{{theme}}/js/module.min.js"></script>
+</body>
+</html>

@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+	<title>图库 | 数字图片湖北</title>
+	{% include 'SkatingCmsBundle:Front/blocks:head_info.html.twig' %}
+</head>
+<body>
+    {% include 'SkatingCmsBundle:Front/blocks:header.html.twig' %}
+
+    {% include 'SkatingCmsBundle:Front/blocks:filter.html.twig' %}
+
+	{% block maincontent %}
+	<div class="m-sortbar">
+		<div class="main-wrap">
+			<div class="sortbar container clearfix">
+				<div class="tag-group">
+					<ul>
+						<li>
+							<span>乡村</span><i class="closeTag"></i>
+						</li>
+						<li>
+							<span>2015年</span><i class="closeTag"></i>
+						</li>
+					</ul>
+				</div>
+				<div class="sort-group">
+					<a href="javascript:;" class="current">相关</a>
+					<a href="javascript:;">最新</a>
+
+					<a href="javascript:;">销量</a>
+				</div>
+				<div class="pager">
+					<span>共有搜索结果<em>4523</em>条</span>
+					<a href="javascript:;"><i class="prev prev-disable"></i></a>
+					<span><em>1</em>/100</span>
+					<a href="javascript:;"><i class="next"></i></a>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="g-result">
+		<div class="main-wrap">
+			<div class="result-list-wrap container">
+				<div class="result-list clearfix">
+					<div class="result-item">
+						<div class="row row-1">
+							<a href="pic_item">
+								<img class="preview-img" src="http://dl.bizhi.sogou.com/images/2013/11/05/397744.jpg?f=download" alt="">
+							</a>
+						</div>
+						<div class="row row-2">图片标题</div>
+						<div class="row row-3">
+							<ul class="clearfix">
+								<li>
+									<a class="btn-preview" href="javascript:;"><i class="preview"></i>预览</a>
+								</li>
+								<li>
+									<a href="javascript:;"><i class="download"></i>下载</a>
+								</li>
+								<li>
+									<a href="javascript:;"><i class="favor selected"></i>收藏</a>
+								</li>
+								<li>
+									<a href="http://202.114.71.171/~2013g2/cart/myCart"><i class="buy"></i>购买</a>
+								</li>
+							</ul>
+						</div>
+					</div>
+					<div class="result-item">
+						<div class="row row-1">
+							<a href="pic_item"><img class="preview-img" src="{{baseurl}}/theme/{{theme}}/images/login/wallhaven-296929.jpg" alt=""></a>
+						</div>
+						<div class="row row-2">图片标题</div>
+						<div class="row row-3">
+							<ul class="clearfix">
+								<li>
+									<a class="btn-preview" href="javascript:;"><i class="preview"></i>预览</a>
+								</li>
+								<li>
+									<a href="javascript:;"><i class="download"></i>下载</a>
+								</li>
+								<li>
+									<a href="javascript:;"><i class="favor"></i>收藏</a>
+								</li>
+								<li>
+									<a href="javascript:;"><i class="buy"></i>购买</a>
+								</li>
+							</ul>
+						</div>
+					</div>
+					<div class="result-item">
+						<div class="row row-1">
+							<a href="pic_item"><img class="preview-img" src="http://cd.yfu.cn/d/file/cdrom/upload/14cx/manb/k14202/k1420209.jpg" alt=""></a>
+						</div>
+						<div class="row row-2">图片标题</div>
+						<div class="row row-3">
+							<ul class="clearfix">
+								<li>
+									<a class="btn-preview" href="javascript:;"><i class="preview"></i>预览</a>
+								</li>
+								<li>
+									<a href="javascript:;"><i class="download"></i>下载</a>
+								</li>
+								<li>
+									<a href="javascript:;"><i class="favor"></i>收藏</a>
+								</li>
+								<li>
+									<a href="javascript:;"><i class="buy"></i>购买</a>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+				<div class="m-page-wrap">
+					<div class="m-page clearfix">
+						<ul class="clearfix">
+							<li class="item pager pager-disable">
+								<a href="javascript:;"> <i class="icon_prev"></i>
+									上一页
+								</a>
+							</li>
+							<li class="item current">
+								<a href="javascript:;">1</a>
+							</li>
+							<li class="item">
+								<a href="javascript:;">2</a>
+							</li>
+							<li class="item">
+								<a href="javascript:;">3</a>
+							</li>
+							<li class="item">
+								<a href="javascript:;">4</a>
+							</li>
+							<li class="item">
+								<a href="javascript:;">5</a>
+							</li>
+							<li class="item dot">
+								<span>...</span>
+							</li>
+							<li class="item pager">
+								<a href="javascript:;">
+									下一页 <i class="icon_next"></i>
+								</a>
+							</li>
+						</ul>
+						<ul class="right">
+							<span>共100页，到第</span>
+							<input class="input" type="number" value="2" min="1" max="100">
+							<span>页</span>
+							<button class="btn" type="submit">确定</button>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	{% endblock %}
+
+    {% include 'SkatingCmsBundle:Front/blocks:footer.html.twig' %}
+
+	<script src="{{baseurl}}/theme/{{theme}}/js/main.min.js"></script>
+	<script src="{{baseurl}}/theme/{{theme}}/js/module.min.js"></script>
+	<script type="text/javascript" >
+		$(document).ready(uImgView);
+	</script>
+</body>
+</html>

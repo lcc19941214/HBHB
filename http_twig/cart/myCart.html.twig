@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+	<title>购物车 | 数字图片湖北</title>
+	<meta charset="utf-8">
+	{% include 'SkatingCmsBundle:Front/blocks:head_info.html.twig' %}
+</head>
+<body>
+    {% include 'SkatingCmsBundle:Front/blocks:header.html.twig' %}
+
+	{% block maincontent %}
+	<div class="g-cart m-form">
+		<div class="main-wrap">
+			<div class="main container">
+				<div class="cart-info clearfix">
+					<span><strong>全部商品</strong>  <em>9</em></span>
+					<div class="cart-sum">
+						<span>已选商品</span>
+						<em>￥0.00</em>
+						<a href="http://202.114.71.171/~2013g2/trade/trade_comfirm" class="button">结算</a>
+					</div>
+				</div>
+				<div class="cart-list">
+					<div class="cart-title">
+						<ul class="clearfix">
+							<li class="td-1">
+								<label>
+									<input type="checkbox" class="input-check getAllChecked">全选
+								</label>
+							</li>
+							<li class="td-2">图片</li>
+							<li class="td-3">详情</li>
+							<li class="td-4">价格</li>
+							<li class="td-5">操作</li>
+						</ul>
+					</div>
+					<div class="cart-item">
+						<ul class="clearfix">
+							<li class="td-1">
+								<label>
+									<input type="checkbox" class="input-check">
+								</label>
+							</li>
+							<li class="td-2">
+								<div class="item-pic">
+									<img src="{{baseurl}}/theme/{{theme}}/images/cart/default.jpg" alt="商品预览" class="itempic">
+									<span>rad4567890123[RF]</span>
+								</div>
+							</li>
+							<li class="td-3">
+								<div class="item-info">
+									<dl>
+										<dd><span>尺寸</span>：10M</dd>
+										<dd><span>用途</span>：编辑用途-5</dd>
+										<dd><span>授权期限及范围</span>：图书、教科书、
+									电子书、杂志配图，只可选择其
+									中一种用途。</dd>
+										<dd><span>授权时间</span>：1年内单次使用</dd>
+									</dl>
+								</div>
+							</li>
+							<li class="td-4">
+								<div class="item-price">
+									<em>价格：￥160.00</em>
+								</div>
+							</li>
+							<li class="td-5">
+								<div class="item-option">
+									<div class="item-option-wrap">
+										<a href="javascript:;" class="button">修改</a>
+										<a href="javascript:;" class="button button_delete">删除</a>
+									</div>
+								</div>
+							</li>
+						</ul>
+					</div>
+					<div class="cart-item">
+						<ul class="clearfix">
+							<li class="td-1">
+								<label>
+									<input type="checkbox" class="input-check">
+								</label>
+							</li>
+							<li class="td-2">
+								<div class="item-pic">
+									<img src="{{baseurl}}/theme/{{theme}}/images/cart/default.jpg" alt="商品预览" class="itempic">
+									<span>rad4567890123[RF]</span>
+								</div>
+							</li>
+							<li class="td-3">
+								<div class="item-info">
+									<dl>
+										<dd><span>尺寸</span>：10M</dd>
+										<dd><span>用途</span>：编辑用途-5</dd>
+										<dd><span>授权期限及范围</span>：图书、教科书、
+									电子书、杂志配图，只可选择其
+									中一种用途。</dd>
+										<dd><span>授权时间</span>：1年内单次使用</dd>
+									</dl>
+								</div>
+							</li>
+							<li class="td-4">
+								<div class="item-price">
+									<em>价格：￥160.00</em>
+								</div>
+							</li>
+							<li class="td-5">
+								<div class="item-option">
+									<div class="item-option-wrap">
+										<a href="javascript:;" class="button">修改</a>
+										<a href="javascript:;" class="button button_delete">删除</a>
+									</div>
+								</div>
+							</li>
+						</ul>
+					</div>
+					<div class="cart-comfirm clearfix">
+						<ul class="toLeft">
+							<li class="td-1">
+								<label>
+									<input type="checkbox" class="input-check getAllChecked">全选
+								</label>
+							</li>
+							<li>
+								<span><a href="javascript:;">删除选中的商品</a>
+								</span>
+							</li>
+							<li>
+								<span><a href="javascript:;" class="button z-button z-button-1">继续挑选图片</a></span>
+							</li>
+						</ul>
+						<div class="toRight">
+							<span>总计：图片 <em>1</em> 张</span>
+							<span>金额<em>￥160.00</em></span>
+							<a href="http://202.114.71.171/~2013g2/trade/trade_comfirm" class="button z-button z-button-2">去结算</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	{% endblock %}
+
+    {% include 'SkatingCmsBundle:Front/blocks:footer.html.twig' %}
+
+	<script src="{{baseurl}}/theme/{{theme}}/js/main.min.js"></script>
+	<script src="{{baseurl}}/theme/{{theme}}/js/module.min.js"></script>
+</body>
+</html>

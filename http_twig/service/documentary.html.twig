@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+	<title>服务 | 数字图片湖北 </title>
+	<meta charset="utf-8">
+	<meta name="description" content="">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" >
+	<link rel="shortcut icon" href="{{baseurl}}/theme/{{theme}}/images/icons/favicon.ico" type="image/x-icon"/>
+	<link rel="stylesheet" href="{{baseurl}}/theme/{{theme}}/css/reset.css">
+	<link rel="stylesheet" href="{{baseurl}}/theme/{{theme}}/css/base_block.css">
+	<link rel="stylesheet" href="{{baseurl}}/theme/{{theme}}/css/module.min.css">
+	<link rel="stylesheet" href="{{baseurl}}/theme/{{theme}}/css/pages.min.css">
+	<link rel="stylesheet" href="{{baseurl}}/theme/{{theme}}/css/response.css">
+	<script src="http://cdn.bootcss.com/jquery/1.8.3/jquery.js"></script>
+</head>
+<body>
+    {% include 'SkatingCmsBundle:Front/blocks:header.html.twig' %}
+	
+	{% block maincontent %}
+	<div class="g-content-service">
+		<div class="content-service-wrap">
+			<div class="content-service container clearfix">
+				<div class="left">
+					<h2>产品服务项目</h2>
+    				{% include 'SkatingCmsBundle:Front/blocks:service_sdnav.html.twig' %}
+				</div>
+				<div class="main">
+					<!-- 记录跟拍 begin -->
+					<div id="documentary" class="service-item service-2">
+						<div class="row row-1">
+							<h2>大型工程节点</h2>
+							<div class="content">
+								<div class="text">
+									<p>
+										我们提供针对大型工程的长期跟踪拍摄服务，专业摄影师可从开工至完工定期到工程现场进行多角度拍摄，同时配合航拍，全方位展现工程的宏伟壮观。
+									</p>
+								</div>
+								<div class="product">
+									<ul>
+										<li>
+											<a href="javascript:;" title="点击查看大图">
+												<img class="preview-img" src="{{baseurl}}/theme/{{theme}}/images/service/service_item/content_2_1.jpg" alt="大型工程节点"></a>
+										</li>
+										<li>
+											<a href="javascript:;" title="点击查看大图">
+												<img class="preview-img" src="{{baseurl}}/theme/{{theme}}/images/service/service_item/content_2_2.jpg" alt="大型工程节点"></a>
+										</li>
+										<li>
+											<a href="javascript:;" title="点击查看大图">
+												<img class="preview-img" src="{{baseurl}}/theme/{{theme}}/images/service/service_item/content_2_3.jpg" alt="大型工程节点"></a>
+										</li>
+										<li>
+											<a href="javascript:;" title="点击查看大图">
+												<img class="preview-img" src="{{baseurl}}/theme/{{theme}}/images/service/service_item/content_2_4.jpg" alt="大型工程节点"></a>
+										</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+						<!-- <div class="row row-2">
+							<h2>区域经济</h2>
+							<div class="content">
+							</div>
+						</div> -->
+						<div class="row row-3">
+							<h2>节庆活动</h2>
+							<div class="content">
+								<div class="text">
+									<p>
+										我们提供全画幅摄影服务，由资深摄影师全程拍摄，选用Canon6D以上全画幅相机，配备专业的红圈镜头，全时捕捉每一个动人细节。同时提供高清摄像服务，由资深录像师跟拍，选用SONY A7S以上全高清单反摄录机。经验丰富的摄影师将为您的每一个精彩瞬间而努力。
+									</p>
+								</div>
+								<div class="product">
+									<ul>
+										<li>
+											<a href="javascript:;" title="点击查看大图">
+												<img class="preview-img" src="{{baseurl}}/theme/{{theme}}/images/service/service_item/content_2_5.jpg" alt="节庆活动"></a>
+										</li>
+										<li>
+											<a href="javascript:;" title="点击查看大图">
+												<img class="preview-img" src="{{baseurl}}/theme/{{theme}}/images/service/service_item/content_2_6.jpg" alt="节庆活动"></a>
+										</li>
+									</ul>
+								</div>	
+							</div>
+						</div>
+						<div class="row contact">
+							<p>关于纪录跟拍服务想要了解更多？
+							<a href="javascript:;" target="_blank">联系我们</a></p>
+						</div>
+					</div>
+					<!-- 记录跟拍 end-->
+				</div>
+			</div>
+		</div>
+	</div>
+	{% endblock %}
+
+    {% include 'SkatingCmsBundle:Front/blocks:footer.html.twig' %}
+	<script src="{{baseurl}}/theme/{{theme}}/js/main.min.js"></script>
+	<script src="{{baseurl}}/theme/{{theme}}/js/module.min.js"></script>
+	<script type="text/javascript" >
+		$(document).ready(imgView(".g-content-service .service-item .preview-img"));
+
+		// 获取link的href，与service的id进行比较
+		$(".g-content-service .left li").each(function() {
+			var $this = $(this);
+			var $link = $this.find("a");
+			var href = $link.attr("href");
+			$this.attr("title", href);
+			var $title = $(this).attr("title");
+			var temp = $(".g-content-service .main .service-item").attr("id"); 
+			if($title == temp) {
+				$this.siblings("li").removeClass("current");
+				$this.addClass("current");
+			}
+		})
+	</script>
+</body>
+</html>

@@ -1,0 +1,29 @@
+{% block user_info_bar %}
+	<div class="left shadow">
+		<div class="row row-1 clearfix">
+			<img src="{{baseurl}}/theme/{{theme}}/images/user/user_default/user_default_headicon.jpg" alt="个人头像" class="headicon">
+			<dl>
+				<dt>name</dt>
+				<dd><a href="user_info" class="icon_edit">编辑信息</a></dd>
+				<dd><a href="javascript:;" class="icon_logout">退出</a></dd>
+			</dl>
+		</div>
+		<div class="row row-2">
+			<dl>
+				<dd><i class="icon_score"></i>积分：<span>30</span></dd>
+				<dd><i class="icon_following"></i>关注：<span>23</span></dd>
+				<dd><i class="icon_follower"></i>粉丝：<span>131</span></dd>
+			</dl>
+		</div>
+		<div class="row row-3">
+			<a href="javascript:;" class="btn">展开详细资料</a>
+			<ul class="infolist">
+				<li><span>姓名：</span>翩翩</li>
+				<li><span>手机：</span>13012341234</li>
+				<li><span>生日：</span>1995-01-01</li>
+				<li><span>现居地：</span>湖北武汉</li>
+				<li><span>收货地址：</span>湖北武汉武汉大学</li>
+			</ul>
+		</div>
+	</div>
+{% endblock %}

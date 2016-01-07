@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+	<title>注册 | 数字图片湖北</title>
+	<meta charset="utf-8">
+	{% include 'SkatingCmsBundle:Front/blocks:head_info.html.twig' %}
+</head>
+<body>
+    {% include 'SkatingCmsBundle:Front/blocks:header.html.twig' %}
+
+	{% block maincontent %}
+	<div class="g-rigister">
+		<div class="main-wrap">
+			<div class="form-wrap container">
+				<h1>注册湖北画报会员</h1>
+				<form class="rgForm m-form" id="rgFrom" action="javascript:;" method="post">
+					<div class="formRow">
+						<div class="formControls">
+							<span class="form-name">*用户名：</span>
+							<input type="text" class="input-text" tabindex="1" autocomplete="off" placeholder="4~16个字符，字母/中文/数字/下划线">
+						</div>
+					</div>
+					<div class="formRow">
+						<div class="formControls">
+							<span class="form-name">*密码：</span>
+							<input type="password" class="input-text input-password" tabindex="2" autocomplete="off" placeholder="8~16个字符，字母/数字/其他符号">
+						</div>
+					</div>
+					<div class="formRow">
+						<div class="formControls">
+							<span class="form-name">*确认密码：</span>
+							<input type="password" class="input-text input-password" tabindex="3" autocomplete="off" placeholder="再次输入密码">
+						</div>
+					</div>
+					<div class="formRow">
+						<div class="formControls">
+							<span class="form-name">*电子邮箱：</span>
+							<input type="text" class="input-text" tabindex="4" autocomplete="off" placeholder="建议使用您的常用邮箱">
+						</div>
+					</div>
+					<div class="formRow">
+						<div class="formControls">
+							<span class="form-name">*验证码：</span>
+							<input type="text" class="input-text" tabindex="5" autocomplete="off" placeholder="请输入图片中的字符">
+							<img src="" alt="验证码" class="verifyCode">
+						</div>
+					</div>
+					<div class="formRow submit">
+						<div class="formControls">
+							<p>
+								<label>
+									<input class="input-check" type="checkbox" name="isAgree" tabindex="6">							
+									<span>
+										我已阅读并接受
+										<a href="javascript:;">《湖北画报用户协议》</a>
+									</span>
+								</label>
+							</p>
+							<p>
+								<button type="submit" class="input-submit" tabindex="7">注册</button>
+							</p>
+						</div>
+					</div>
+				</form>
+			</div>
+		</div>
+	</div>
+	{% endblock %}
+
+	{% include 'SkatingCmsBundle:Front/blocks:footer.html.twig' %}
+
+	<script src="{{baseurl}}/theme/{{theme}}/js/main.min.js"></script>
+	<script src="{{baseurl}}/theme/{{theme}}/js/module.min.js"></script>
+</body>
+</html>

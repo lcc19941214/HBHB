@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+	<title>个人主页 | 数字图片湖北</title>
+	{% include 'SkatingCmsBundle:Front/blocks:head_info.html.twig' %}
+</head>
+<body>
+    {% include 'SkatingCmsBundle:Front/blocks:header.html.twig' %}
+
+	{% block maincontent %}
+	<div class="g-user">
+		<div class="main-wrap container clearfix">
+    		{% include 'SkatingCmsBundle:Front/blocks:user_info_left.html.twig' %}
+			<div class="main shadow">
+				<div class="nav">
+					<a class="selected" href="javascript:;">基本信息</a>
+					<a href="javascript:;">设置头像</a>
+					<a href="javascript:;">修改密码</a>
+					<a href="javascript:;">账号绑定</a>
+					<a href="javascript:;">收货地址</a>
+				</div>
+				<!-- person info -->
+				<div class="tabChild tabChild-1">
+					<div class="form-wrap">
+						<form action="javascript:;" id="infoForm" class="infoForm m-form" name="infoForm" method="post">
+							<div class="formRow">
+								<div class="formControls">
+									<span class="form-name">真实姓名：</span>
+									<input type="text" class="input-text" tabindex="1" placeholder="请输入真实姓名" autocomplete="off">
+								</div>
+							</div>
+							<div class="formRow">
+								<div class="formControls">
+									<span class="form-name">邮箱：</span>
+									<input type="email" class="input-text input-email" tabindex="2" placeholder="请输入您常用的邮箱地址" autocomplete="off">
+									<span class="form-tips">在找回密码时会发送到该邮箱</span>
+								</div>
+							</div>
+							<div class="formRow">
+								<div class="formControls">
+									<span class="form-name">手机号码：</span>
+									<input type="text" class="input-text" tabindex="3" placeholder="请输入您常用的手机号码" autocomplete="off">
+									<span class="form-tips">方便我们联系您，您的资料不会泄露给任何人</span>
+								</div>
+							</div>
+							<div class="formRow">
+								<div class="formControls">
+									<span class="form-name">性别：</span>
+									<input type="radio" class="input-check input-radio" tabindex="4" name="sex" value="male"><span class="form-text">男</span>
+									<input type="radio" class="input-check input-radio" tabindex="5" name="sex" value="female"><span class="form-text">女</span>
+								</div>
+							</div>
+							<div class="formRow">
+								<div class="formControls" id="infoForm-birth">
+									<span class="form-name">生日：</span>
+									<input type="date" class="input-text input-date select" tabindex="6">
+					               <!--  <label for="dtp_input2" class="col-md-2 control-label">日期选择</label>
+					                <div class="input-group date form_date col-md-5" data-date="" data-date-format="yyyy MM dd" data-link-field="dtp_input2" data-link-format="yyyy-mm-dd">
+					                    <input class="form-control" size="16" type="text" value="" readonly>
+					                    <span class="input-group-addon"><span class="glyphicon glyphicon-remove"></span></span>
+										<span class="input-group-addon"><span class="glyphicon glyphicon-calendar"></span></span>
+					                </div>
+									<input type="hidden" id="dtp_input2" value="" /><br/> -->
+								</div>
+							</div>
+							<div class="formRow area">
+								<div class="formControls">
+									<span class="form-name">现居地：</span>
+									<select id="s_province" class="input-text select" name="s_province"></select>
+									<select id="s_city" class="input-text select" name="s_city" ></select>
+									<select id="s_county" class="input-text select" name="s_county"></select>
+									<script class="resources library" src="../js/area.js"></script>
+									<script type="text/javascript">_init_area();</script>
+								</div>
+							</div>
+							<div class="formRow">
+								<div class="formControls submit">
+									<button type="submit" class="input-submit">保存</button>
+									<button type="reset" class="input-submit input-reset">取消</button>
+								</div>
+							</div>
+						</form>
+					</div>
+				</div>
+				<!-- headicon -->
+				<div class="tabChild tabChild-2">
+					<div class="form-wrap clearfix">
+						<form action="javascript:;" id="headForm" class="headForm m-form" name="headForm" method="post">
+							<div class="formControls uploadPic clearfix">
+								<!-- <input type="file"> -->
+								<label class="calendar">
+									<input class="input-file" type="file">
+									<button class="input-submit addPic"><span>本地照片</span></button>
+								</label>
+								<button class="input-submit camera"><span>拍摄照片</span></button>
+								<p style="clear: both">仅支持jpg、png、gif图片文件，且文件小于5M</p>
+							</div>
+							<div class="formControls">
+								<img class="display" src="{{baseurl}}/theme/{{theme}}/pictures/images/default.jpg" alt="假装这里有张图" />
+							</div>
+							<div class="formControls submit">
+								<button class="input-submit">保存</button>
+								<button class="input-submit input-reset">取消</button>
+							</div>
+						</form>
+						<div class="headForm-right">
+							<dl class="clearfix">
+								<dt>当前头像</dt>
+								<dd class="scale-l">
+									<img src="{{baseurl}}/theme/{{theme}}/images/user/default.jpg">
+									<p>200*200像素</p>
+								</dd>
+								<dd class="scale-m">
+									<img src="{{baseurl}}/theme/{{theme}}/images/user/default.jpg">
+									<p>120*120像素</p>
+								</dd>
+								<dd class="scale-s">
+									<img src="{{baseurl}}/theme/{{theme}}/images/user/default.jpg">
+									<p>48*48像素</p>
+								</dd>
+							</dl>
+							<ul>
+								<li class="notice">
+									您上传的头像会自动生成三种尺寸，请注意中小尺寸的头像是否清晰。
+								</li>
+								<li>
+									如果您还没有设置自己的头像，系统会显示为默认头像，您需要上传一张新照片作为自己的个人头像。
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+				<!-- password -->
+				<div class="tabChild tabChild-3">
+					<div class="form-wrap">
+						<form action="javascript:;" id="pswForm" class="pswForm m-form" name="pswForm" method="post">
+							<div class="formRow">
+								<div class="formControls">
+									<span class="form-name">当前密码：</span>
+									<input class="input-text input-password" type="password" tabindex="1" >
+								</div>
+							</div>
+							<div class="formRow">
+								<div class="formControls">
+									<span class="form-name">新密码：</span>
+									<input class="input-text input-password" type="password" tabindex="1" >
+								</div>
+							</div>
+							<div class="formRow">
+								<div class="formControls">
+									<span class="form-name">确认密码：</span>
+									<input class="input-text input-password" type="password" tabindex="1" >
+								</div>
+							</div>
+							<div class="formRow">
+								<div class="formControls submit">
+									<button type="submit" class="input-submit">保存</button>
+									<button type="reset" class="input-submit input-reset">取消</button>
+								</div>
+							</div>
+						</form>
+					</div>
+				</div>
+				<!-- account-->
+				<div class="tabChild tabChild-4">
+					<div class="accountList">
+						<h1>合作网站账号信息管理</h1>
+						<p>绑定后，就可以使用以下网站账号直接登录。</p>
+						<ul>
+							<li><img src="{{baseurl}}/theme/{{theme}}/images/user/account_qq.png" alt="">腾讯QQ<a href="javascript:;">绑定账号</a></li>
+							<li><img src="{{baseurl}}/theme/{{theme}}/images/user/account_wechat.png" alt="">微信账号<a href="javascript:;">绑定账号</a></li>
+							<li><img src="{{baseurl}}/theme/{{theme}}/images/user/account_weibo.png" alt="">新浪微博<a href="javascript:;">绑定账号</a></li>
+						</ul>
+					</div>
+				</div>
+				<!-- address -->
+				<div class="tabChild tabChild-5">
+					<div class="form-wrap">
+						<form action="javascript:;" id="addForm" class="addForm m-form" name="addForm" method="post">
+							<div class="formRow">
+								<div class="formControls">
+									<span class="form-name">收件人：</span>
+									<input class="input-text" type="text" placeholder="请输入收件人姓名">
+								</div>
+							</div>
+							<div class="formRow">
+								<div class="formControls">
+									<span class="form-name">手机号码：</span>
+									<input class="input-text" type="text" placeholder="请输入收件人手机号码">
+									<span class="form-tips">用于收货前确认</span>
+								</div>
+							</div>
+							<div class="formRow area">
+								<div class="formControls">
+									<span class="form-name">收货地址：</span>
+									<!-- <em><mark style="font-size:10px">这一段有一点问题，之后debug了再更新</mark></em> -->
+									<select id="s_province" class="input-text select" name="s_province"></select>
+									<select id="s_city" class="input-text select" name="s_city" ></select>
+									<select id="s_county" class="input-text select" name="s_county"></select>
+									<script class="resources library" src="../js/area.js"></script>
+								</div>
+							</div>
+							<div class="formRow">
+								<div class="formControls">
+									<span class="form-name">邮箱：</span>
+									<input type="email" class="input-text input-email" tabindex="2" placeholder="请输入您常用的邮箱地址" autocomplete="off">
+									<span class="form-tips">用来接收订单提醒邮件，便于您及时了解订单状态</span>
+								</div>
+							</div>
+							<div class="formRow">
+								<div class="formControls">
+									<span class="form-name">邮编：</span>
+									<input type="text" class="input-text" tabindex="3" placeholder="请输入您的邮编" autocomplete="off">
+									<span class="form-tips">用于快速确认收货地址</span>
+								</div>
+							</div>
+							<div class="formRow">
+								<div class="formControls submit">
+									<button type="submit" class="input-submit">保存</button>
+									<button type="reset" class="input-submit input-reset">取消</button>
+								</div>
+							</div>
+						</form>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	{% endblock %}
+
+    {% include 'SkatingCmsBundle:Front/blocks:footer.html.twig' %}
+
+	<script src="{{baseurl}}/theme/{{theme}}/js/main.min.js"></script>
+	<script src="{{baseurl}}/theme/{{theme}}/js/module.min.js"></script>
+</body>
+</html>

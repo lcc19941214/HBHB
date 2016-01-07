@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+	<title>个人主页 | 数字图片湖北</title>
+	{% include 'SkatingCmsBundle:Front/blocks:head_info.html.twig' %}
+</head>
+<body>
+    {% include 'SkatingCmsBundle:Front/blocks:header.html.twig' %}
+
+	{% block maincontent %}
+	<div class="g-user">
+		<div class="main-wrap container clearfix">
+    		{% include 'SkatingCmsBundle:Front/blocks:user_info_left.html.twig' %}
+			<div class="main shadow">
+				<!-- pic -->
+				<div class="nav">
+					<a class="selected" href="javascript:;">个人上传</a>
+					<a href="javascript:;">收藏图片</a>
+					<a href="http://202.114.71.171/~2013g2/cart/myOrder.html">我的订单</a>
+					<a href="http://202.114.71.171/~2013g2/cart/myCart.html">购物车</a>
+				</div>
+				<div class="tabChild tabChild-1">
+					<div class="sortbar-wrap">
+						<a href="javascript:;" class="upload">上传作品</a>
+						<div class="sortbar">
+							<span>排序：</span>
+							<a href="javascript:;">日期</a>
+							<a href="javascript:;">名称</a>
+						</div>
+					</div>
+					<div class="personPic">
+						<ul class="picList clearfix">
+							<li class="picItem">
+								<a href="javascript:;"><img src="{{baseurl}}/theme/{{theme}}/images/user/user_default/user_default_product.jpg" alt="个人作品"></a>
+								<p>
+									<a href="">作品名称</a>
+								</p>
+								<div class="picControl clearfix">
+									<a class="picEdit" title="编辑图片"></a>
+									<a class="picDelete" title="删除图片"></a>
+								</div>
+							</li>
+							<li class="picItem">
+								<a href="javascript:;"><img src="{{baseurl}}/theme/{{theme}}/images/user/user_default/user_default_product.jpg" alt="个人作品"></a>
+								<p>
+									<a href="">作品名称</a>
+								</p>
+								<div class="picControl clearfix">
+									<a class="picEdit" title="编辑图片"></a>
+									<a class="picDelete" title="删除图片"></a>
+								</div>
+							</li>
+							<li class="picItem">
+								<a href="javascript:;"><img src="{{baseurl}}/theme/{{theme}}/images/user/user_default/user_default_product.jpg" alt="个人作品"></a>
+								<p>
+									<a href="">作品名称</a>
+								</p>
+								<div class="picControl clearfix">
+									<a class="picEdit" title="编辑图片"></a>
+									<a class="picDelete" title="删除图片"></a>
+								</div>
+							</li>
+							<li class="picItem">
+								<a href="javascript:;"><img src="{{baseurl}}/theme/{{theme}}/images/user/user_default/user_default_product.jpg" alt="个人作品"></a>
+								<p>
+									<a href="">作品名称</a>
+								</p>
+								<div class="picControl clearfix">
+									<a class="picEdit" title="编辑图片"></a>
+									<a class="picDelete" title="删除图片"></a>
+								</div>
+							</li>
+							<li class="picItem">
+								<a href="javascript:;"><img src="{{baseurl}}/theme/{{theme}}/images/user/user_default/user_default_product.jpg" alt="个人作品"></a>
+								<p>
+									<a href="">作品名称</a>
+								</p>
+								<div class="picControl clearfix">
+									<a class="picEdit" title="编辑图片"></a>
+									<a class="picDelete" title="删除图片"></a>
+								</div>
+							</li>
+							<li class="picItem">
+								<a href="javascript:;"><img src="{{baseurl}}/theme/{{theme}}/images/user/user_default/user_default_product.jpg" alt="个人作品"></a>
+								<p>
+									<a href="">作品名称</a>
+								</p>
+								<div class="picControl clearfix">
+									<a class="picEdit" title="编辑图片"></a>
+									<a class="picDelete" title="删除图片"></a>
+								</div>
+							</li>
+							<li class="picItem">
+								<a href="javascript:;"><img src="{{baseurl}}/theme/{{theme}}/images/user/user_default/user_default_product.jpg" alt="个人作品"></a>
+								<p>
+									<a href="">作品名称</a>
+								</p>
+								<div class="picControl clearfix">
+									<a class="picEdit" title="编辑图片"></a>
+									<a class="picDelete" title="删除图片"></a>
+								</div>
+							</li>
+						</ul>
+						<div class="m-page-wrap">
+							<div class="m-page clearfix">
+								<ul class="clearfix">
+									<li class="item pager pager-disable">
+										<a href="javascript:;"> <i class="icon_prev"></i>
+											上一页
+										</a>
+									</li>
+									<li class="item current">
+										<a href="javascript:;">1</a>
+									</li>
+									<li class="item">
+										<a href="javascript:;">2</a>
+									</li>
+									<li class="item">
+										<a href="javascript:;">3</a>
+									</li>
+									<li class="item">
+										<a href="javascript:;">4</a>
+									</li>
+									<li class="item">
+										<a href="javascript:;">5</a>
+									</li>
+									<li class="item dot">
+										<span>...</span>
+									</li>
+									<li class="item pager">
+										<a href="javascript:;">
+											下一页 <i class="icon_next"></i>
+										</a>
+									</li>
+								</ul>
+								<ul class="right">
+									<span>共100页，到第</span>
+									<input class="input" type="number" value="2" min="1" max="100">
+									<span>页</span>
+									<button class="btn" type="submit">确定</button>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!-- collected -->
+				<div class="tabChild tabChild-2">
+					<div class="sortbar-wrap">
+						<div class="sortbar">
+							<span>排序：</span>
+							<a href="javascript:;">日期</a>
+							<a href="javascript:;">名称</a>
+						</div>
+					</div>
+				</div>
+				<!-- order -->
+				<!-- cart -->
+			</div>
+		</div>
+	</div>
+	{% endblock %}
+
+    {% include 'SkatingCmsBundle:Front/blocks:footer.html.twig' %}
+
+	<script src="{{baseurl}}/theme/{{theme}}/js/main.min.js"></script>
+	<script src="{{baseurl}}/theme/{{theme}}/js/module.min.js"></script>
+</body>
+</html>
